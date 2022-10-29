@@ -34,8 +34,6 @@ public class SysAdminViewDoctorPanel extends javax.swing.JPanel {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -54,22 +52,11 @@ public class SysAdminViewDoctorPanel extends javax.swing.JPanel {
         btnDeleteDoctor = new javax.swing.JButton();
         btnUpdateDoc = new javax.swing.JButton();
         btnView = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tblDoctor = new javax.swing.JTable();
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel1.setText("View Doctor Directory");
-
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane1.setViewportView(jTable1);
 
         jLabel2.setText("Name :");
 
@@ -114,15 +101,23 @@ public class SysAdminViewDoctorPanel extends javax.swing.JPanel {
             }
         });
 
+        tblDoctor.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
+            },
+            new String [] {
+                "Name", "Age", "Gender", "City", "Phone-Number", "Hospital", "Doctor-ID"
+            }
+        ));
+        jScrollPane1.setViewportView(tblDoctor);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(350, 350, 350))
-            .addComponent(jScrollPane1)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -142,9 +137,8 @@ public class SysAdminViewDoctorPanel extends javax.swing.JPanel {
                 .addGap(72, 72, 72)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(3, 3, 3)
                         .addComponent(btnView, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(46, 46, 46)
+                        .addGap(49, 49, 49)
                         .addComponent(btnUpdateDoc, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(42, 42, 42)
                         .addComponent(btnDeleteDoctor, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -161,15 +155,20 @@ public class SysAdminViewDoctorPanel extends javax.swing.JPanel {
                             .addComponent(txtHospital, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
                             .addComponent(txtDoctorId))))
                 .addGap(166, 166, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(350, 350, 350))
+            .addComponent(jScrollPane1)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
+                .addGap(4, 4, 4)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -302,7 +301,7 @@ public class SysAdminViewDoctorPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable tblDoctor;
     private javax.swing.JTextField txtAge;
     private javax.swing.JTextField txtCity;
     private javax.swing.JTextField txtContactNumber;
@@ -311,4 +310,31 @@ public class SysAdminViewDoctorPanel extends javax.swing.JPanel {
     private javax.swing.JTextField txtHospital;
     private javax.swing.JTextField txtName;
     // End of variables declaration//GEN-END:variables
+
+public void populateTable(){
+         DefaultTableModel model = (DefaultTableModel) tblDoctor.getModel();
+        model.setRowCount(0);
+         
+        for(Doctor d :DocHistory.getDoctorhistory()){
+            Object[] row = new Object[7];
+            row[0] = d;
+            row[1]=d.getAge();
+            row[2]=d.getGender();
+            row[3]=d.getCity();
+            row[4]=d.getPhoneNumber();
+            row[5]=d.getHospital();
+            row[6]=d.getDoctorID();
+            model.addRow(row);
+        }
+    }
+private void clrfeilds() {
+        txtAge.setText("");
+        txtCity.setText("");       
+        txtContactNumber.setText("");        
+        txtGender.setText("");
+        txtName.setText("");      
+        drpGender.setSelectedIndex(-1);
+        txtHospital.setText("");
+        txtDoctorId.setText("");
+
 }
