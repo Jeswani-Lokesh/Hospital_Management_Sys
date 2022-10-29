@@ -117,17 +117,17 @@ public class Login_Page extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        String UserID = txtUsername.getText();
+        String Username = txtUsername.getText();
         String Password = txtPassword.getText();
-        if(UserID.equals("admin") && Password.equals("admin")){
+        if(Username.equals("admin") && Password.equals("admin")){
           AdminOptions ao = new AdminOptions();
           ao.setVisible(true);
           dispose();
         }        
-        else if( UserID.equals("doctor") && Password.equals("doctor")){
+        else if( Username.equals("doctor") && Password.equals("doctor")){
            
         }
-        else if( UserID.equals("communityadmin") && Password.equals("communityadmin")){
+        else if( Username.equals("communityadmin") && Password.equals("communityadmin")){
             
         }
         else  {
