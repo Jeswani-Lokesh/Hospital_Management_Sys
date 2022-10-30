@@ -4,17 +4,26 @@
  */
 package ui;
 
+import model.DoctorHistory;
+import model.PersonHistory;
+
+
 /**
  *
  * @author Lokesh
  */
 public class MainAdminJFrame extends javax.swing.JFrame {
-
+    PersonHistory perHistory ; 
+    DoctorHistory docHistory;
     /**
      * Creates new form MainAdminJFrame
      */
+    
+    
     public MainAdminJFrame() {
         initComponents();
+        perHistory = new PersonHistory();
+        docHistory = new DoctorHistory();
     }
 
     /**
@@ -26,47 +35,31 @@ public class MainAdminJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        SplitPane = new javax.swing.JSplitPane();
-        ControlPanel = new javax.swing.JPanel();
-        ButtonAddPerson = new javax.swing.JButton();
-        ButtonViewPerson = new javax.swing.JButton();
-        ButtonAddDoctor = new javax.swing.JButton();
-        ModifyDoctor = new javax.swing.JButton();
-        AddPatient = new javax.swing.JButton();
+        splitPane = new javax.swing.JSplitPane();
+        controlPanel = new javax.swing.JPanel();
+        btnAdd = new javax.swing.JButton();
+        btnView = new javax.swing.JButton();
         btnLogout = new javax.swing.JButton();
-        WorkArea = new javax.swing.JPanel();
+        btnAddDoctor = new javax.swing.JButton();
+        btnView2 = new javax.swing.JButton();
+        btnModifyDoctor = new javax.swing.JButton();
+        workArea = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        ButtonAddPerson.setText("Add Person");
-        ButtonAddPerson.addActionListener(new java.awt.event.ActionListener() {
+        btnAdd.setText("Add Person");
+        btnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonAddPersonActionPerformed(evt);
+                btnAddActionPerformed(evt);
             }
         });
 
-        ButtonViewPerson.setText("Modify Person");
-        ButtonViewPerson.addActionListener(new java.awt.event.ActionListener() {
+        btnView.setText("Modify Person");
+        btnView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonViewPersonActionPerformed(evt);
+                btnViewActionPerformed(evt);
             }
         });
-
-        ButtonAddDoctor.setText("Add Doctor");
-        ButtonAddDoctor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonAddDoctorActionPerformed(evt);
-            }
-        });
-
-        ModifyDoctor.setText("Modify Doctor");
-        ModifyDoctor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ModifyDoctorActionPerformed(evt);
-            }
-        });
-
-        AddPatient.setText("Add Patient");
 
         btnLogout.setText("Logout");
         btnLogout.addActionListener(new java.awt.event.ActionListener() {
@@ -75,99 +68,134 @@ public class MainAdminJFrame extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout ControlPanelLayout = new javax.swing.GroupLayout(ControlPanel);
-        ControlPanel.setLayout(ControlPanelLayout);
-        ControlPanelLayout.setHorizontalGroup(
-            ControlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ControlPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(ControlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(ControlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(ButtonViewPerson, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(ModifyDoctor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(ButtonAddPerson, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(ButtonAddDoctor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(AddPatient, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(btnLogout))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        btnAddDoctor.setText("Add Doctor ");
+        btnAddDoctor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddDoctorActionPerformed(evt);
+            }
+        });
+
+        btnView2.setText("Add Patient");
+        btnView2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnView2ActionPerformed(evt);
+            }
+        });
+
+        btnModifyDoctor.setText("Modify Doctor ");
+        btnModifyDoctor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModifyDoctorActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout controlPanelLayout = new javax.swing.GroupLayout(controlPanel);
+        controlPanel.setLayout(controlPanelLayout);
+        controlPanelLayout.setHorizontalGroup(
+            controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(controlPanelLayout.createSequentialGroup()
+                .addGroup(controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(controlPanelLayout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addComponent(btnLogout)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(controlPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnView, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnView2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(controlPanelLayout.createSequentialGroup()
+                                .addComponent(btnModifyDoctor)
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addComponent(btnAdd, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(controlPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btnAddDoctor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap())
         );
-        ControlPanelLayout.setVerticalGroup(
-            ControlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ControlPanelLayout.createSequentialGroup()
-                .addGap(27, 27, 27)
-                .addComponent(ButtonAddPerson)
-                .addGap(29, 29, 29)
-                .addComponent(ButtonViewPerson)
-                .addGap(35, 35, 35)
-                .addComponent(ButtonAddDoctor)
-                .addGap(29, 29, 29)
-                .addComponent(ModifyDoctor)
-                .addGap(29, 29, 29)
-                .addComponent(AddPatient)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 151, Short.MAX_VALUE)
+        controlPanelLayout.setVerticalGroup(
+            controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(controlPanelLayout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(btnAdd)
+                .addGap(18, 18, 18)
+                .addComponent(btnView)
+                .addGap(18, 18, 18)
+                .addComponent(btnAddDoctor)
+                .addGap(18, 18, 18)
+                .addComponent(btnModifyDoctor)
+                .addGap(73, 73, 73)
+                .addComponent(btnView2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 250, Short.MAX_VALUE)
                 .addComponent(btnLogout)
-                .addGap(29, 29, 29))
+                .addGap(27, 27, 27))
         );
 
-        SplitPane.setLeftComponent(ControlPanel);
+        splitPane.setLeftComponent(controlPanel);
 
-        javax.swing.GroupLayout WorkAreaLayout = new javax.swing.GroupLayout(WorkArea);
-        WorkArea.setLayout(WorkAreaLayout);
-        WorkAreaLayout.setHorizontalGroup(
-            WorkAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 573, Short.MAX_VALUE)
+        javax.swing.GroupLayout workAreaLayout = new javax.swing.GroupLayout(workArea);
+        workArea.setLayout(workAreaLayout);
+        workAreaLayout.setHorizontalGroup(
+            workAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 755, Short.MAX_VALUE)
         );
-        WorkAreaLayout.setVerticalGroup(
-            WorkAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 467, Short.MAX_VALUE)
+        workAreaLayout.setVerticalGroup(
+            workAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 619, Short.MAX_VALUE)
         );
 
-        SplitPane.setRightComponent(WorkArea);
+        splitPane.setRightComponent(workArea);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(SplitPane, javax.swing.GroupLayout.DEFAULT_SIZE, 678, Short.MAX_VALUE)
+            .addComponent(splitPane)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(SplitPane, javax.swing.GroupLayout.DEFAULT_SIZE, 467, Short.MAX_VALUE)
+            .addComponent(splitPane)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ButtonAddPersonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonAddPersonActionPerformed
+    private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
         // TODO add your handling code here:
-        SysAdminCreatePersonPanel acpp = new SysAdminCreatePersonPanel(perHistory);
-        splitPane.setRightComponent(acpp);
-    }//GEN-LAST:event_ButtonAddPersonActionPerformed
+          SysAdminCreatePersonPanel acpp = new SysAdminCreatePersonPanel(perHistory);
+         splitPane.setRightComponent(acpp);
+         
+    }//GEN-LAST:event_btnAddActionPerformed
 
-    private void ButtonViewPersonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonViewPersonActionPerformed
-        // TODO add your handling code here:
+    private void btnViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewActionPerformed
         SysAdminViewPersonPanel savp = new SysAdminViewPersonPanel(perHistory);
         splitPane.setRightComponent(savp);
-    }//GEN-LAST:event_ButtonViewPersonActionPerformed
+    }//GEN-LAST:event_btnViewActionPerformed
 
     private void btnLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogoutActionPerformed
         // TODO add your handling code here:
         Login_Page lp = new Login_Page();
         lp.setVisible(true);
         dispose();
+        
+        
     }//GEN-LAST:event_btnLogoutActionPerformed
 
-    private void ButtonAddDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonAddDoctorActionPerformed
+    private void btnAddDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddDoctorActionPerformed
         // TODO add your handling code here:
         SysAdminCreateDoctorPanel scdp  = new SysAdminCreateDoctorPanel(perHistory,docHistory);
-        splitPane.setRightComponent(scdp);
-    }//GEN-LAST:event_ButtonAddDoctorActionPerformed
+         splitPane.setRightComponent(scdp);
+    }//GEN-LAST:event_btnAddDoctorActionPerformed
 
-    private void ModifyDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ModifyDoctorActionPerformed
+    private void btnView2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnView2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnView2ActionPerformed
+
+    private void btnModifyDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModifyDoctorActionPerformed
         // TODO add your handling code here:
       SysAdminViewDoctorPanel svdp = new SysAdminViewDoctorPanel(docHistory);
       splitPane.setRightComponent(svdp);
-    }//GEN-LAST:event_ModifyDoctorActionPerformed
+    }//GEN-LAST:event_btnModifyDoctorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -195,6 +223,9 @@ public class MainAdminJFrame extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(MainAdminJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -205,14 +236,14 @@ public class MainAdminJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton AddPatient;
-    private javax.swing.JButton ButtonAddDoctor;
-    private javax.swing.JButton ButtonAddPerson;
-    private javax.swing.JButton ButtonViewPerson;
-    private javax.swing.JPanel ControlPanel;
-    private javax.swing.JButton ModifyDoctor;
-    private javax.swing.JSplitPane SplitPane;
-    private javax.swing.JPanel WorkArea;
+    private javax.swing.JButton btnAdd;
+    private javax.swing.JButton btnAddDoctor;
     private javax.swing.JButton btnLogout;
+    private javax.swing.JButton btnModifyDoctor;
+    private javax.swing.JButton btnView;
+    private javax.swing.JButton btnView2;
+    private javax.swing.JPanel controlPanel;
+    private javax.swing.JSplitPane splitPane;
+    private javax.swing.JPanel workArea;
     // End of variables declaration//GEN-END:variables
 }

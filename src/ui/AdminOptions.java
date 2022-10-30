@@ -4,6 +4,8 @@
  */
 package ui;
 
+import model.PersonHistory;
+
 /**
  *
  * @author Lokesh
@@ -13,6 +15,7 @@ public class AdminOptions extends javax.swing.JFrame {
     /**
      * Creates new form AdminOptions
      */
+    PersonHistory perHistory ;
     public AdminOptions() {
         initComponents();
     }
@@ -27,9 +30,9 @@ public class AdminOptions extends javax.swing.JFrame {
     private void initComponents() {
 
         btnPatient = new javax.swing.JButton();
-        btnPerson = new javax.swing.JButton();
         btnDoctor = new javax.swing.JButton();
-        btnCommunity = new javax.swing.JButton();
+        btnPerson = new javax.swing.JButton();
+        btnCommunityAdmin = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -40,6 +43,8 @@ public class AdminOptions extends javax.swing.JFrame {
             }
         });
 
+        btnDoctor.setText("Doctor");
+
         btnPerson.setText("Person");
         btnPerson.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -47,35 +52,40 @@ public class AdminOptions extends javax.swing.JFrame {
             }
         });
 
-        btnDoctor.setText("Doctor");
-
-        btnCommunity.setText("Community");
+        btnCommunityAdmin.setText("Community Admin");
+        btnCommunityAdmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCommunityAdminActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(152, 152, 152)
+                .addContainerGap(197, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnCommunity, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnDoctor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnPerson, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnPatient, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(156, Short.MAX_VALUE))
+                    .addComponent(btnCommunityAdmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnPerson, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(30, 30, 30)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnPatient, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnDoctor, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(182, 182, 182))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addComponent(btnPatient)
-                .addGap(33, 33, 33)
-                .addComponent(btnPerson)
-                .addGap(35, 35, 35)
-                .addComponent(btnDoctor)
-                .addGap(37, 37, 37)
-                .addComponent(btnCommunity)
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addGap(288, 288, 288)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnPatient)
+                    .addComponent(btnPerson))
+                .addGap(31, 31, 31)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnDoctor)
+                    .addComponent(btnCommunityAdmin))
+                .addContainerGap(300, Short.MAX_VALUE))
         );
 
         pack();
@@ -84,6 +94,10 @@ public class AdminOptions extends javax.swing.JFrame {
     private void btnPatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPatientActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnPatientActionPerformed
+
+    private void btnCommunityAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCommunityAdminActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCommunityAdminActionPerformed
 
     private void btnPersonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPersonActionPerformed
         // TODO add your handling code here:
@@ -127,7 +141,7 @@ public class AdminOptions extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCommunity;
+    private javax.swing.JButton btnCommunityAdmin;
     private javax.swing.JButton btnDoctor;
     private javax.swing.JButton btnPatient;
     private javax.swing.JButton btnPerson;
