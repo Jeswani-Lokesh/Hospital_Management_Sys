@@ -4,76 +4,47 @@
  */
 package model;
 
+import java.util.Date;
+
 /**
  *
  * @author Lokesh
  */
-public class Doctor {
-    private String Name;
-    private String Age;
-    private String Gender;
-    private String City;
-    private String PhoneNumber ;
-    private String Hospital;
-    private String DoctorID;
+public class Doctor extends Person{
+    
+    private int doctorId;
+    private Date practicingFrom;
+    private DoctorSpecialization doctorSpecialization;
 
-    public String getName() {
-        return Name;
-    }
-
-    public void setName(String Name) {
-        this.Name = Name;
+    public Doctor(String name, long cellPhoneNumber, String emailId, int age, String gender, House house,int doctorId,Date practicingFrom,DoctorSpecialization doctorSpecialization, String password) {
+        super(name, cellPhoneNumber, emailId, age, gender, house,password);
+        this.doctorId = doctorId;
+        this.practicingFrom = practicingFrom;
+        this.doctorSpecialization = doctorSpecialization;
     }
 
-    public String getAge() {
-        return Age;
+    public int getDoctorId() {
+        return doctorId;
     }
 
-    public void setAge(String Age) {
-        this.Age = Age;
+    public void setDoctorId(int doctorId) {
+        this.doctorId = doctorId;
     }
 
-    public String getGender() {
-        return Gender;
+    public Date getPracticingFrom() {
+        return practicingFrom;
     }
 
-    public void setGender(String Gender) {
-        this.Gender = Gender;
+    public void setPracticingFrom(Date practicingFrom) {
+        this.practicingFrom = practicingFrom;
     }
 
-    public String getCity() {
-        return City;
+    public DoctorSpecialization getDoctorSpecialization() {
+        return doctorSpecialization;
     }
 
-    public void setCity(String City) {
-        this.City = City;
+    public void setDoctorSpecialization(DoctorSpecialization doctorSpecialization) {
+        this.doctorSpecialization = doctorSpecialization;
     }
-
-    public String getPhoneNumber() {
-        return PhoneNumber;
-    }
-
-    public void setPhoneNumber(String PhoneNumber) {
-        this.PhoneNumber = PhoneNumber;
-    }
-
-    public String getHospital() {
-        return Hospital;
-    }
-
-    public void setHospital(String Hospital) {
-        this.Hospital = Hospital;
-    }
-
-    public String getDoctorID() {
-        return DoctorID;
-    }
-
-    public void setDoctorID(String DoctorID) {
-        this.DoctorID = DoctorID;
-    }
-    @Override
-    public String toString(){
-        return Name;
-    }
+    
 }
