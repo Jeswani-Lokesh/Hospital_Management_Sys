@@ -61,7 +61,7 @@ public class HospitalUpdateHospital extends javax.swing.JPanel {
         txtHospitalSearch = new javax.swing.JTextField();
         btnSearchHospital = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(102, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
 
         lblHospName.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblHospName.setText("Hospital Name :");
@@ -109,7 +109,7 @@ public class HospitalUpdateHospital extends javax.swing.JPanel {
             }
         });
 
-        lblTitle.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lblTitle.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle.setText("Update Hospital");
 

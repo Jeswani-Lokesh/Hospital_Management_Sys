@@ -84,9 +84,9 @@ public class HospitalUpdateDoctor extends javax.swing.JPanel {
         txtSearchDoctor = new javax.swing.JTextField();
         btnSearchDoctor = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(102, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
 
-        lblTitle.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lblTitle.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle.setText("Update Doctor");
 
@@ -94,6 +94,7 @@ public class HospitalUpdateDoctor extends javax.swing.JPanel {
         lblDoctorInfo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblDoctorInfo.setText("Doctor Information");
 
+        lblName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblName.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblName.setText("Name :");
 
@@ -103,9 +104,11 @@ public class HospitalUpdateDoctor extends javax.swing.JPanel {
             }
         });
 
+        lblSpecialization.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblSpecialization.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblSpecialization.setText("Specialization");
 
+        lblPractsingFrom.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblPractsingFrom.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblPractsingFrom.setText("Practising From :");
 
@@ -119,19 +122,23 @@ public class HospitalUpdateDoctor extends javax.swing.JPanel {
             }
         });
 
+        lblGender.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblGender.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblGender.setText("Gender :");
 
+        lblAge.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblAge.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblAge.setText("Age :");
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Contact Information");
 
+        lblHouseNo.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblHouseNo.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblHouseNo.setText("House No :");
 
+        lblCity.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblCity.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblCity.setText("City :");
 
@@ -141,9 +148,11 @@ public class HospitalUpdateDoctor extends javax.swing.JPanel {
             }
         });
 
+        lblCommunity.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblCommunity.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblCommunity.setText("Community :");
 
+        lblEmailID.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblEmailID.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblEmailID.setText("Email ID :");
 
@@ -160,8 +169,9 @@ public class HospitalUpdateDoctor extends javax.swing.JPanel {
             }
         });
 
+        lblCellPhoneNo.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblCellPhoneNo.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        lblCellPhoneNo.setText("Cell Phone Number :");
+        lblCellPhoneNo.setText("Phone:");
 
         txtCellPhoneNo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -169,11 +179,13 @@ public class HospitalUpdateDoctor extends javax.swing.JPanel {
             }
         });
 
+        lblState.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblState.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblState.setText("State :");
 
         comboState.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "NY", "MA", "CA", "TX" }));
 
+        lblStreet.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblStreet.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblStreet.setText("Street :");
 
@@ -183,6 +195,7 @@ public class HospitalUpdateDoctor extends javax.swing.JPanel {
             }
         });
 
+        lblSearchDoctor.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblSearchDoctor.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblSearchDoctor.setText("Search Doctor by ID:");
 
@@ -225,12 +238,9 @@ public class HospitalUpdateDoctor extends javax.swing.JPanel {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(comboCommunity, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnUpdateDoctor)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(lblCellPhoneNo, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtCellPhoneNo, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(lblCellPhoneNo, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtCellPhoneNo, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addGroup(layout.createSequentialGroup()
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -274,6 +284,10 @@ public class HospitalUpdateDoctor extends javax.swing.JPanel {
                                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 571, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(btnUpdateDoctor)
+                .addGap(285, 285, 285))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -332,7 +346,7 @@ public class HospitalUpdateDoctor extends javax.swing.JPanel {
                     .addComponent(lblEmailID))
                 .addGap(18, 18, 18)
                 .addComponent(btnUpdateDoctor)
-                .addContainerGap(49, Short.MAX_VALUE))
+                .addContainerGap(51, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

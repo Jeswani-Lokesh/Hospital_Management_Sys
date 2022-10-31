@@ -71,18 +71,20 @@ public class DoctorUpdateEncounter extends javax.swing.JPanel {
         txtDoctorId = new javax.swing.JTextField();
         btnSearchDoctor = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(102, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
 
-        lblTitle.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lblTitle.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle.setText("Update Encounter");
 
+        lblDate.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblDate.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblDate.setText("Date :");
 
         txtEncounterDate.setEditable(false);
         txtEncounterDate.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("MM/dd/yyyy"))));
 
+        lblHospitalName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblHospitalName.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblHospitalName.setText("Hospital Name :");
 
@@ -93,6 +95,7 @@ public class DoctorUpdateEncounter extends javax.swing.JPanel {
             }
         });
 
+        lblBloodPressure.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblBloodPressure.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblBloodPressure.setText("Blood Pressure :");
 
@@ -102,6 +105,7 @@ public class DoctorUpdateEncounter extends javax.swing.JPanel {
             }
         });
 
+        lblPulse.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblPulse.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblPulse.setText("Pulse :");
 
@@ -111,6 +115,7 @@ public class DoctorUpdateEncounter extends javax.swing.JPanel {
             }
         });
 
+        lblWeight.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblWeight.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblWeight.setText("Temperature :");
 
@@ -120,6 +125,7 @@ public class DoctorUpdateEncounter extends javax.swing.JPanel {
             }
         });
 
+        btnUpdateEncounter.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         btnUpdateEncounter.setText("Update Encounter");
         btnUpdateEncounter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -127,6 +133,7 @@ public class DoctorUpdateEncounter extends javax.swing.JPanel {
             }
         });
 
+        lblSearchEncounter.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblSearchEncounter.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblSearchEncounter.setText("Search Encounter by ID:");
 
@@ -143,6 +150,7 @@ public class DoctorUpdateEncounter extends javax.swing.JPanel {
             }
         });
 
+        lblPatientId.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblPatientId.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblPatientId.setText("Patient ID :");
 
@@ -160,6 +168,7 @@ public class DoctorUpdateEncounter extends javax.swing.JPanel {
             }
         });
 
+        lblDoctorId.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblDoctorId.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblDoctorId.setText("Doctor ID :");
 
@@ -264,9 +273,9 @@ public class DoctorUpdateEncounter extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblWeight, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtTemperature, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(29, 29, 29)
                 .addComponent(btnUpdateEncounter)
-                .addGap(64, 64, 64))
+                .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 

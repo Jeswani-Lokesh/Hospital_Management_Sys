@@ -52,10 +52,11 @@ public class DoctorViewPatient extends javax.swing.JPanel {
         tblPatientList = new javax.swing.JTable();
         btnDelete = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(102, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
 
+        lblSearchPatient.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblSearchPatient.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        lblSearchPatient.setText("Search Patient by Name:");
+        lblSearchPatient.setText("Search:");
 
         txtSearchPatient.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,7 +76,7 @@ public class DoctorViewPatient extends javax.swing.JPanel {
             }
         });
 
-        lblTitle.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lblTitle.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle.setText("View Patient");
 

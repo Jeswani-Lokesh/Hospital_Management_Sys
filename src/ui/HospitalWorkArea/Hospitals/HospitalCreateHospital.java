@@ -58,12 +58,13 @@ public class HospitalCreateHospital extends javax.swing.JPanel {
         comboCity = new javax.swing.JComboBox<>();
         comboCommunity = new javax.swing.JComboBox<>();
 
-        setBackground(new java.awt.Color(102, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
 
-        lblTitle.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lblTitle.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle.setText("Create Hospital");
 
+        lblHospName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblHospName.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblHospName.setText("Hospital Name :");
 
@@ -73,6 +74,7 @@ public class HospitalCreateHospital extends javax.swing.JPanel {
             }
         });
 
+        lblHospitalAddress.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblHospitalAddress.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblHospitalAddress.setText("Hospital Address :");
 
@@ -82,6 +84,7 @@ public class HospitalCreateHospital extends javax.swing.JPanel {
             }
         });
 
+        lblContactNo.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblContactNo.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblContactNo.setText("Contact Number :");
 
@@ -91,6 +94,7 @@ public class HospitalCreateHospital extends javax.swing.JPanel {
             }
         });
 
+        lblCommunity.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblCommunity.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblCommunity.setText("Community :");
 
@@ -101,6 +105,7 @@ public class HospitalCreateHospital extends javax.swing.JPanel {
             }
         });
 
+        lblCity.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblCity.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblCity.setText("City :");
 
@@ -165,7 +170,7 @@ public class HospitalCreateHospital extends javax.swing.JPanel {
                     .addComponent(comboCommunity))
                 .addGap(18, 18, 18)
                 .addComponent(btnCreateHospital)
-                .addContainerGap(184, Short.MAX_VALUE))
+                .addContainerGap(182, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
