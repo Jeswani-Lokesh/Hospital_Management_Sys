@@ -30,12 +30,12 @@ public class PersonDirectory {
         community.setCommunity(CityCommunityMap);
         
         house.setCommunity(community);
-        house.setHouseNum(104 );
-        house.setStreet("Ward Street");
+        house.setHouseNum(49 );
+        house.setStreet("Horadan Way");
         
         
         
-        Person person = new Person("Babloo",Long.parseLong("8422097015"),"bablooSingh@gmail.com",29,"Male",house,"123");
+        Person person = new Person("Mohan",Long.parseLong("9892066899"),"mohan1960@gmail.com",49,"Male",house,"123");
 
         persons.add(person);
     }

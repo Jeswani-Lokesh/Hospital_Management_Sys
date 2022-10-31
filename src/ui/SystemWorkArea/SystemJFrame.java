@@ -74,7 +74,7 @@ public class SystemJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        controlPanel.setBackground(new java.awt.Color(102, 255, 255));
+        controlPanel.setBackground(new java.awt.Color(255, 255, 255));
         controlPanel.setPreferredSize(new java.awt.Dimension(180, 600));
 
         btnPatient.setText("Patient");
@@ -134,7 +134,7 @@ public class SystemJFrame extends javax.swing.JFrame {
                             .addComponent(btnHospital, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnEncounters, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnLogout, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         controlPanelLayout.setVerticalGroup(
             controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -142,19 +142,21 @@ public class SystemJFrame extends javax.swing.JFrame {
                 .addGap(75, 75, 75)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(btnPatient, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31)
-                .addComponent(btnDoctor, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
-                .addComponent(btnHospital, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31)
-                .addComponent(btnEncounters, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(49, 49, 49)
+                .addComponent(btnPatient)
+                .addGap(18, 18, 18)
+                .addComponent(btnDoctor)
+                .addGap(18, 18, 18)
+                .addComponent(btnHospital)
+                .addGap(18, 18, 18)
+                .addComponent(btnEncounters)
+                .addGap(218, 218, 218)
                 .addComponent(btnLogout)
-                .addContainerGap(72, Short.MAX_VALUE))
+                .addContainerGap(78, Short.MAX_VALUE))
         );
 
         jSplitPaneSystem.setLeftComponent(controlPanel);
+
+        workArea.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout workAreaLayout = new javax.swing.GroupLayout(workArea);
         workArea.setLayout(workAreaLayout);

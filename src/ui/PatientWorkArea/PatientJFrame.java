@@ -69,7 +69,7 @@ public class PatientJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        controlPanel.setBackground(new java.awt.Color(102, 255, 255));
+        controlPanel.setBackground(new java.awt.Color(255, 255, 255));
         controlPanel.setPreferredSize(new java.awt.Dimension(200, 600));
 
         btnHosp.setText("Hospitals");
@@ -130,9 +130,9 @@ public class PatientJFrame extends javax.swing.JFrame {
         controlPanelLayout.setVerticalGroup(
             controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(controlPanelLayout.createSequentialGroup()
-                .addGap(40, 40, 40)
+                .addGap(50, 50, 50)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(56, 56, 56)
+                .addGap(46, 46, 46)
                 .addComponent(btnHosp, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40)
                 .addComponent(btnDoctors, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
