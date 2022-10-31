@@ -142,7 +142,7 @@ public class Login_Page extends javax.swing.JFrame {
             
         }
         else  {
-           JOptionPane.showMessageDialog(this, "Invalid Username or Passowrd ","Error",JOptionPane.ERROR_MESSAGE); 
+           JOptionPane.showMessageDialog(this, "Please enter valid credentials ","Error",JOptionPane.ERROR_MESSAGE); 
            txtUserId.setText("");
            txtPassword.setText("");
            dispose();

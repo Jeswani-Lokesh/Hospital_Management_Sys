@@ -161,13 +161,13 @@ public class MainAdminJFrame extends javax.swing.JFrame {
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
         // TODO add your handling code here:
-          SysAdminCreatePersonPanel acpp = new SysAdminCreatePersonPanel(perHistory);
-         splitPane.setRightComponent(acpp);
+          CreatePersonPanel cpp = new CreatePersonPanel(perHistory);
+         splitPane.setRightComponent(cpp);
          
     }//GEN-LAST:event_btnAddActionPerformed
 
     private void btnViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewActionPerformed
-        SysAdminViewPersonPanel savp = new SysAdminViewPersonPanel(perHistory);
+        ViewPersonPanel savp = new ViewPersonPanel(perHistory);
         splitPane.setRightComponent(savp);
     }//GEN-LAST:event_btnViewActionPerformed
 
@@ -182,8 +182,8 @@ public class MainAdminJFrame extends javax.swing.JFrame {
 
     private void btnAddDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddDoctorActionPerformed
         // TODO add your handling code here:
-        SysAdminCreateDoctorPanel scdp  = new SysAdminCreateDoctorPanel(perHistory,docHistory);
-         splitPane.setRightComponent(scdp);
+        CreateDoctorPanel cdp  = new CreateDoctorPanel(perHistory,docHistory);
+         splitPane.setRightComponent(cdp);
     }//GEN-LAST:event_btnAddDoctorActionPerformed
 
     private void btnView2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnView2ActionPerformed
@@ -192,8 +192,8 @@ public class MainAdminJFrame extends javax.swing.JFrame {
 
     private void btnModifyDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModifyDoctorActionPerformed
         // TODO add your handling code here:
-      SysAdminViewDoctorPanel svdp = new SysAdminViewDoctorPanel(docHistory);
-      splitPane.setRightComponent(svdp);
+      ViewDoctorPanel vdp = new ViewDoctorPanel(docHistory);
+      splitPane.setRightComponent(vdp);
     }//GEN-LAST:event_btnModifyDoctorActionPerformed
 
     /**

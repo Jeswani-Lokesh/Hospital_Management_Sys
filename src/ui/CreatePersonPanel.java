@@ -12,13 +12,13 @@ import model.PersonHistory;
  *
  * @author Lokesh
  */
-public class SysAdminCreatePersonPanel extends javax.swing.JPanel {
+public class CreatePersonPanel extends javax.swing.JPanel {
 
     /**
      * Creates new form AdminCreatePatientPanel
      */
    PersonHistory perHistory ; 
-    public SysAdminCreatePersonPanel(PersonHistory perHistory) {
+    public CreatePersonPanel(PersonHistory perHistory) {
         initComponents();
         this.perHistory=perHistory;
     }
@@ -149,7 +149,7 @@ public class SysAdminCreatePersonPanel extends javax.swing.JPanel {
         p.setGender(Gender);
         p.setName(Name);
         p.setPhoneNumber(ContactNumber);
-        JOptionPane.showMessageDialog(this, "Person has been created !! "); 
+        JOptionPane.showMessageDialog(this, "Person has been added !! "); 
         clrfeilds();
     }//GEN-LAST:event_btnSubmitActionPerformed
 

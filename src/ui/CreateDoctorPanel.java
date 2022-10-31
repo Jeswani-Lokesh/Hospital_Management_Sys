@@ -16,14 +16,14 @@ import model.PersonHistory;
  * @author Lokesh
  */
 
-public class SysAdminCreateDoctorPanel extends javax.swing.JPanel {
+public class CreateDoctorPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form SysAdminCreateDoctorPanel
+     * Creates new form CreateDoctorPanel
      */
     PersonHistory perHistory ;
     DoctorHistory DocHistory ; 
-    public SysAdminCreateDoctorPanel(PersonHistory perHistory,DoctorHistory DocHistory) {
+    public CreateDoctorPanel(PersonHistory perHistory,DoctorHistory DocHistory) {
         initComponents();
         this.perHistory=perHistory;
         this.DocHistory=DocHistory;

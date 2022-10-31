@@ -14,13 +14,13 @@ import model.Person;
  *
  * @author Lokesh
  */
-public class SysAdminViewDoctorPanel extends javax.swing.JPanel {
+public class ViewDoctorPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form SysAdminViewDoctorPanel
+     * Creates new form ViewDoctorPanel
      */
     DoctorHistory DocHistory ; 
-    public SysAdminViewDoctorPanel(DoctorHistory DocHistory) {
+    public ViewDoctorPanel(DoctorHistory DocHistory) {
         initComponents();
         this.DocHistory=DocHistory;
         populateTable();
@@ -237,7 +237,7 @@ public class SysAdminViewDoctorPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         int selectedRowIndex = tblDoctor.getSelectedRow();
         if(selectedRowIndex<0){
-            JOptionPane.showMessageDialog(this,"Please Selecta row to View");
+            JOptionPane.showMessageDialog(this,"Please Select row to View");
             return ;
         }
 
@@ -258,7 +258,7 @@ public class SysAdminViewDoctorPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         int selectedRowIndex = tblDoctor.getSelectedRow();
         if(selectedRowIndex<0){
-            JOptionPane.showMessageDialog(this,"Please Selecta row to delete");
+            JOptionPane.showMessageDialog(this,"Please Select row to delete");
             return ;
         }
         
@@ -275,7 +275,7 @@ public class SysAdminViewDoctorPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
                 int selectedRowIndex = tblDoctor.getSelectedRow();
         if(selectedRowIndex<0){
-            JOptionPane.showMessageDialog(this,"Please Selecta row to View");
+            JOptionPane.showMessageDialog(this,"Please Select row to View");
             return ;
         }
         

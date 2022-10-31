@@ -15,13 +15,13 @@ import model.PersonHistory;
  *
  * @author Lokesh
  */
-public class SysAdminViewPersonPanel extends javax.swing.JPanel {
+public class ViewPersonPanel extends javax.swing.JPanel {
 
     /**
      * Creates new form AdminViewPersonPanel
      */
     PersonHistory perHistory ;
-    public SysAdminViewPersonPanel(PersonHistory perHistory) {
+    public ViewPersonPanel(PersonHistory perHistory) {
         initComponents();        
         this.perHistory=perHistory;
         populateTable();
@@ -212,7 +212,7 @@ public class SysAdminViewPersonPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         int selectedRowIndex = tblPerson.getSelectedRow();
         if(selectedRowIndex<0){
-            JOptionPane.showMessageDialog(this,"Please Selecta row to delete");
+            JOptionPane.showMessageDialog(this,"Please Select row to delete");
             return ;
         }
         
@@ -243,7 +243,7 @@ public class SysAdminViewPersonPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         int selectedRowIndex = tblPerson.getSelectedRow();
         if(selectedRowIndex<0){
-            JOptionPane.showMessageDialog(this,"Please Selecta row to View");
+            JOptionPane.showMessageDialog(this,"Please Select row to View");
             return ;
         }
         
@@ -271,7 +271,7 @@ public class SysAdminViewPersonPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         int selectedRowIndex = tblPerson.getSelectedRow();
         if(selectedRowIndex<0){
-            JOptionPane.showMessageDialog(this,"Please Selecta row to View");
+            JOptionPane.showMessageDialog(this,"Please Select row to View");
             return ;
         }
         
