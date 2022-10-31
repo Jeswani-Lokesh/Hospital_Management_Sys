@@ -312,7 +312,7 @@ public void populateTable(){
 public void deleterowfromPersonTable(){
         int selectedRowIndex = tblPerson.getSelectedRow();
         if(selectedRowIndex<0){
-            JOptionPane.showMessageDialog(this,"Please Selecta row to delete");
+            JOptionPane.showMessageDialog(this,"Please Select row to delete");
             return ;
         }
         
@@ -320,7 +320,7 @@ public void deleterowfromPersonTable(){
         Person selectedPerson = (Person)model.getValueAt(selectedRowIndex, 0);
         
         perHistory.deletePerson(selectedPerson);
-        JOptionPane.showMessageDialog(this,"Employee Deleted !! ");
+        JOptionPane.showMessageDialog(this,"Person Deleted !! ");
          populateTable();
 }
 
