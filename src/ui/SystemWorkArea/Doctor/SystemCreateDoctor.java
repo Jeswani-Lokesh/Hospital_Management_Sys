@@ -85,13 +85,13 @@ public class SystemCreateDoctor extends javax.swing.JPanel {
         lblPractsingFrom = new javax.swing.JLabel();
         txtPractisingFrom = new javax.swing.JFormattedTextField();
 
-        setBackground(new java.awt.Color(102, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
 
-        lblTitle.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lblTitle.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle.setText("Create Doctor");
 
-        lblDoctorInfo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblDoctorInfo.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         lblDoctorInfo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblDoctorInfo.setText("Doctor Information");
 
@@ -159,7 +159,7 @@ public class SystemCreateDoctor extends javax.swing.JPanel {
         });
 
         lblCellPhoneNo.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        lblCellPhoneNo.setText("Cell Phone Number :");
+        lblCellPhoneNo.setText("Phone:");
 
         lblState.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblState.setText("State :");
@@ -221,7 +221,7 @@ public class SystemCreateDoctor extends javax.swing.JPanel {
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(lblSpecialization, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE)
                                 .addComponent(lblName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lblPractsingFrom, javax.swing.GroupLayout.PREFERRED_SIZE, 99, Short.MAX_VALUE))
+                                .addComponent(lblPractsingFrom, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(txtName, javax.swing.GroupLayout.DEFAULT_SIZE, 174, Short.MAX_VALUE)
@@ -301,7 +301,7 @@ public class SystemCreateDoctor extends javax.swing.JPanel {
                     .addComponent(lblEmailID))
                 .addGap(18, 18, 18)
                 .addComponent(btnCreateDoctor)
-                .addContainerGap(77, Short.MAX_VALUE))
+                .addContainerGap(80, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

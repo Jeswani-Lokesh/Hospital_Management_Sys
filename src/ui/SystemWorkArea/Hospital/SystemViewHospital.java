@@ -46,7 +46,7 @@ public class SystemViewHospital extends javax.swing.JPanel {
         tblHospitalList = new javax.swing.JTable();
         btnDelete = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(102, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
 
         lblTitle.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

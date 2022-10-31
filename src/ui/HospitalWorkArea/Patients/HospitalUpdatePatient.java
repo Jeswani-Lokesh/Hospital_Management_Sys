@@ -83,7 +83,7 @@ public class HospitalUpdatePatient extends javax.swing.JPanel {
         lblGender = new javax.swing.JLabel();
         lblEmailID = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(102, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
 
         lblTitle.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

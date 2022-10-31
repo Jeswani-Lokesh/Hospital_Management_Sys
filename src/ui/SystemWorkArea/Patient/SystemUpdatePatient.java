@@ -82,12 +82,13 @@ public class SystemUpdatePatient extends javax.swing.JPanel {
         lblGender = new javax.swing.JLabel();
         lblEmailID = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(102, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
 
-        lblTitle.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lblTitle.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle.setText("Update Patient");
 
+        lblSearchPatient.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblSearchPatient.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblSearchPatient.setText("Search Patient by ID:");
 
@@ -104,7 +105,7 @@ public class SystemUpdatePatient extends javax.swing.JPanel {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Personal Information");
 
@@ -143,7 +144,7 @@ public class SystemUpdatePatient extends javax.swing.JPanel {
             }
         });
 
-        lblContactInfo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblContactInfo.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         lblContactInfo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblContactInfo.setText("Contact Information");
 
@@ -343,7 +344,7 @@ public class SystemUpdatePatient extends javax.swing.JPanel {
                     .addComponent(lblEmailID))
                 .addGap(18, 18, 18)
                 .addComponent(btnUpdatePatient)
-                .addContainerGap(53, Short.MAX_VALUE))
+                .addContainerGap(59, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

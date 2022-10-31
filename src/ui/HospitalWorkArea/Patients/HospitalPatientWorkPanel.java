@@ -52,7 +52,7 @@ public class HospitalPatientWorkPanel extends javax.swing.JPanel {
 
         splitPane.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        controlPanel.setBackground(new java.awt.Color(102, 255, 255));
+        controlPanel.setBackground(new java.awt.Color(255, 255, 255));
         controlPanel.setPreferredSize(new java.awt.Dimension(150, 609));
         controlPanel.setVerifyInputWhenFocusTarget(false);
 
@@ -108,7 +108,7 @@ public class HospitalPatientWorkPanel extends javax.swing.JPanel {
 
         splitPane.setLeftComponent(controlPanel);
 
-        patientWorkArea.setBackground(new java.awt.Color(102, 255, 255));
+        patientWorkArea.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout patientWorkAreaLayout = new javax.swing.GroupLayout(patientWorkArea);
         patientWorkArea.setLayout(patientWorkAreaLayout);
