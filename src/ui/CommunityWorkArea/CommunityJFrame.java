@@ -25,6 +25,7 @@ public class CommunityJFrame extends javax.swing.JFrame {
     public CommunityJFrame(String username) {
         initComponents();
         this.username = username;
+        //this.password=password;
     }
    
     
@@ -94,13 +95,13 @@ public class CommunityJFrame extends javax.swing.JFrame {
         controlPanelLayout.setVerticalGroup(
             controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(controlPanelLayout.createSequentialGroup()
-                .addGap(149, 149, 149)
+                .addGap(118, 118, 118)
                 .addComponent(btnHouses, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
-                .addComponent(btnCommunities, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37)
+                .addComponent(btnCommunities, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
                 .addComponent(btnHospital, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 170, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 194, Short.MAX_VALUE)
                 .addComponent(btnLogout)
                 .addGap(24, 24, 24))
         );
